@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		89884BCD20DCD85000C4F038 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89884BCC20DCD85000C4F038 /* AppDelegate.swift */; };
+		89884BD420DCD85300C4F038 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89884BD320DCD85200C4F038 /* Assets.xcassets */; };
+		89884BE520DCD9CA00C4F038 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89884BE320DCD9CA00C4F038 /* MainViewController.swift */; };
+		89884BE620DCD9CA00C4F038 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89884BE420DCD9CA00C4F038 /* MainViewController.xib */; };
+		89884BE820DCE85800C4F038 /* KeychainPasswordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89884BE720DCE85800C4F038 /* KeychainPasswordItem.swift */; };
+		89884BEE20DCE8FB00C4F038 /* RegisterUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89884BED20DCE8FB00C4F038 /* RegisterUseCase.swift */; };
+		89884BF020DCE91200C4F038 /* RegisterUseCaseViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89884BEF20DCE91200C4F038 /* RegisterUseCaseViewProtocol.swift */; };
+		89884BF220DCE91C00C4F038 /* RegisterUseCaseRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89884BF120DCE91C00C4F038 /* RegisterUseCaseRepositoryProtocol.swift */; };
+		89884BF620DCE9C100C4F038 /* RegisterUseCaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89884BF520DCE9C100C4F038 /* RegisterUseCaseRepository.swift */; };
+		89884BF920DCEBE300C4F038 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89884BF820DCEBE300C4F038 /* LocalAuthentication.framework */; };
+		89884BFF20DCED3500C4F038 /* CheckFingerprintSensorUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89884BFE20DCED3500C4F038 /* CheckFingerprintSensorUseCase.swift */; };
+		89884C0120DCED8900C4F038 /* CheckFingerprintSensorUseCaseViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89884C0020DCED8900C4F038 /* CheckFingerprintSensorUseCaseViewProtocol.swift */; };
+		89884C0320DCED9A00C4F038 /* CheckFingerprintSensorUseCaseRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89884C0220DCED9A00C4F038 /* CheckFingerprintSensorUseCaseRepositoryProtocol.swift */; };
+		89884C0620DCEE4700C4F038 /* CheckFingerprintSensorUseCaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89884C0520DCEE4700C4F038 /* CheckFingerprintSensorUseCaseRepository.swift */; };
+		89884C0920DCFF5100C4F038 /* CheckUsernameStoredUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89884C0820DCFF5100C4F038 /* CheckUsernameStoredUseCase.swift */; };
+		89884C0B20DCFF5F00C4F038 /* CheckUsernameStoredUseCaseViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89884C0A20DCFF5F00C4F038 /* CheckUsernameStoredUseCaseViewProtocol.swift */; };
+		89884C0D20DCFF7200C4F038 /* CheckUsernameStoredUseCaseRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89884C0C20DCFF7100C4F038 /* CheckUsernameStoredUseCaseRepositoryProtocol.swift */; };
+		89884C1020DCFFB100C4F038 /* CheckUsernameStoredUseCaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89884C0F20DCFFB100C4F038 /* CheckUsernameStoredUseCaseRepository.swift */; };
+		89884C1220DD00E700C4F038 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89884C1120DD00E700C4F038 /* Constants.swift */; };
+		89884C1520DD024C00C4F038 /* LoginWithFingerprintUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89884C1420DD024C00C4F038 /* LoginWithFingerprintUseCase.swift */; };
+		89884C1720DD026600C4F038 /* LoginWithFingerprintUseCaseViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89884C1620DD026600C4F038 /* LoginWithFingerprintUseCaseViewProtocol.swift */; };
+		89884C1920DD027500C4F038 /* LoginWithFingerprintUseCaseRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89884C1820DD027500C4F038 /* LoginWithFingerprintUseCaseRepositoryProtocol.swift */; };
+		89884C1C20DD02A800C4F038 /* LoginWithFingerprintUseCaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89884C1B20DD02A800C4F038 /* LoginWithFingerprintUseCaseRepository.swift */; };
+		8994650120DD0B9000170038 /* AuthenticatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 899464FF20DD0B9000170038 /* AuthenticatedViewController.swift */; };
+		8994650220DD0B9000170038 /* AuthenticatedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8994650020DD0B9000170038 /* AuthenticatedViewController.xib */; };
+		8994650520DD0E2300170038 /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8994650420DD0E2300170038 /* LoginUseCase.swift */; };
+		8994650720DD0E2F00170038 /* LoginUseCaseViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8994650620DD0E2F00170038 /* LoginUseCaseViewProtocol.swift */; };
+		8994650920DD0E5100170038 /* LoginUseCaseRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8994650820DD0E5100170038 /* LoginUseCaseRepositoryProtocol.swift */; };
+		8994650C20DD0EAB00170038 /* LoginUseCaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8994650B20DD0EAB00170038 /* LoginUseCaseRepository.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		89884BC920DCD85000C4F038 /* Fingerprint Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fingerprint Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		89884BCC20DCD85000C4F038 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		89884BD320DCD85200C4F038 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		89884BD820DCD85300C4F038 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89884BE320DCD9CA00C4F038 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		89884BE420DCD9CA00C4F038 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		89884BE720DCE85800C4F038 /* KeychainPasswordItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainPasswordItem.swift; sourceTree = "<group>"; };
+		89884BED20DCE8FB00C4F038 /* RegisterUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUseCase.swift; sourceTree = "<group>"; };
+		89884BEF20DCE91200C4F038 /* RegisterUseCaseViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUseCaseViewProtocol.swift; sourceTree = "<group>"; };
+		89884BF120DCE91C00C4F038 /* RegisterUseCaseRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUseCaseRepositoryProtocol.swift; sourceTree = "<group>"; };
+		89884BF520DCE9C100C4F038 /* RegisterUseCaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterUseCaseRepository.swift; sourceTree = "<group>"; };
+		89884BF820DCEBE300C4F038 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		89884BFE20DCED3500C4F038 /* CheckFingerprintSensorUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckFingerprintSensorUseCase.swift; sourceTree = "<group>"; };
+		89884C0020DCED8900C4F038 /* CheckFingerprintSensorUseCaseViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckFingerprintSensorUseCaseViewProtocol.swift; sourceTree = "<group>"; };
+		89884C0220DCED9A00C4F038 /* CheckFingerprintSensorUseCaseRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckFingerprintSensorUseCaseRepositoryProtocol.swift; sourceTree = "<group>"; };
+		89884C0520DCEE4700C4F038 /* CheckFingerprintSensorUseCaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckFingerprintSensorUseCaseRepository.swift; sourceTree = "<group>"; };
+		89884C0820DCFF5100C4F038 /* CheckUsernameStoredUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckUsernameStoredUseCase.swift; sourceTree = "<group>"; };
+		89884C0A20DCFF5F00C4F038 /* CheckUsernameStoredUseCaseViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckUsernameStoredUseCaseViewProtocol.swift; sourceTree = "<group>"; };
+		89884C0C20DCFF7100C4F038 /* CheckUsernameStoredUseCaseRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckUsernameStoredUseCaseRepositoryProtocol.swift; sourceTree = "<group>"; };
+		89884C0F20DCFFB100C4F038 /* CheckUsernameStoredUseCaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckUsernameStoredUseCaseRepository.swift; sourceTree = "<group>"; };
+		89884C1120DD00E700C4F038 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		89884C1420DD024C00C4F038 /* LoginWithFingerprintUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithFingerprintUseCase.swift; sourceTree = "<group>"; };
+		89884C1620DD026600C4F038 /* LoginWithFingerprintUseCaseViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithFingerprintUseCaseViewProtocol.swift; sourceTree = "<group>"; };
+		89884C1820DD027500C4F038 /* LoginWithFingerprintUseCaseRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithFingerprintUseCaseRepositoryProtocol.swift; sourceTree = "<group>"; };
+		89884C1B20DD02A800C4F038 /* LoginWithFingerprintUseCaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithFingerprintUseCaseRepository.swift; sourceTree = "<group>"; };
+		899464FF20DD0B9000170038 /* AuthenticatedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticatedViewController.swift; sourceTree = "<group>"; };
+		8994650020DD0B9000170038 /* AuthenticatedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthenticatedViewController.xib; sourceTree = "<group>"; };
+		8994650420DD0E2300170038 /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
+		8994650620DD0E2F00170038 /* LoginUseCaseViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCaseViewProtocol.swift; sourceTree = "<group>"; };
+		8994650820DD0E5100170038 /* LoginUseCaseRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCaseRepositoryProtocol.swift; sourceTree = "<group>"; };
+		8994650B20DD0EAB00170038 /* LoginUseCaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCaseRepository.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		89884BC620DCD85000C4F038 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89884BF920DCEBE300C4F038 /* LocalAuthentication.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		89884BC020DCD85000C4F038 = {
+			isa = PBXGroup;
+			children = (
+				89884BCB20DCD85000C4F038 /* Fingerprint Test */,
+				89884BCA20DCD85000C4F038 /* Products */,
+				89884BF720DCEBE300C4F038 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		89884BCA20DCD85000C4F038 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				89884BC920DCD85000C4F038 /* Fingerprint Test.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		89884BCB20DCD85000C4F038 /* Fingerprint Test */ = {
+			isa = PBXGroup;
+			children = (
+				89884BDE20DCD94F00C4F038 /* Data */,
+				89884BDF20DCD95200C4F038 /* Domain */,
+				89884BE020DCD95600C4F038 /* Framework */,
+				89884BD820DCD85300C4F038 /* Info.plist */,
+			);
+			path = "Fingerprint Test";
+			sourceTree = "<group>";
+		};
+		89884BDE20DCD94F00C4F038 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				89884BF320DCE9AC00C4F038 /* Main */,
+				89884BE720DCE85800C4F038 /* KeychainPasswordItem.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		89884BDF20DCD95200C4F038 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				89884BE920DCE8CD00C4F038 /* Main */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		89884BE020DCD95600C4F038 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				89884BCC20DCD85000C4F038 /* AppDelegate.swift */,
+				89884BE120DCD9A100C4F038 /* View */,
+				89884BD320DCD85200C4F038 /* Assets.xcassets */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+		89884BE120DCD9A100C4F038 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				89884BE220DCD9BB00C4F038 /* Main */,
+				899464FE20DD0B6500170038 /* Authenticated */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		89884BE220DCD9BB00C4F038 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				89884BE320DCD9CA00C4F038 /* MainViewController.swift */,
+				89884BE420DCD9CA00C4F038 /* MainViewController.xib */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		89884BE920DCE8CD00C4F038 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				89884BFD20DCED2400C4F038 /* CheckFingerprintSensorUseCase */,
+				89884C0720DCFF3C00C4F038 /* CheckUsernameStoredUseCase */,
+				89884BEC20DCE8EF00C4F038 /* RegisterUseCase */,
+				89884C1320DD022900C4F038 /* LoginWithFingerprintUseCase */,
+				8994650320DD0E1100170038 /* LoginUseCase */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		89884BEC20DCE8EF00C4F038 /* RegisterUseCase */ = {
+			isa = PBXGroup;
+			children = (
+				89884BED20DCE8FB00C4F038 /* RegisterUseCase.swift */,
+				89884BEF20DCE91200C4F038 /* RegisterUseCaseViewProtocol.swift */,
+				89884BF120DCE91C00C4F038 /* RegisterUseCaseRepositoryProtocol.swift */,
+			);
+			path = RegisterUseCase;
+			sourceTree = "<group>";
+		};
+		89884BF320DCE9AC00C4F038 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				89884C0420DCEE2A00C4F038 /* CheckFingerprintSensorUseCase */,
+				89884C0E20DCFFA600C4F038 /* CheckUsernameStoredUseCase */,
+				89884BF420DCE9B200C4F038 /* RegisterUseCase */,
+				899464FD20DD02DC00170038 /* LoginWithFingerprintUseCase */,
+				8994650A20DD0E9500170038 /* LoginUseCase */,
+				89884C1120DD00E700C4F038 /* Constants.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		89884BF420DCE9B200C4F038 /* RegisterUseCase */ = {
+			isa = PBXGroup;
+			children = (
+				89884BF520DCE9C100C4F038 /* RegisterUseCaseRepository.swift */,
+			);
+			path = RegisterUseCase;
+			sourceTree = "<group>";
+		};
+		89884BF720DCEBE300C4F038 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89884BF820DCEBE300C4F038 /* LocalAuthentication.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		89884BFD20DCED2400C4F038 /* CheckFingerprintSensorUseCase */ = {
+			isa = PBXGroup;
+			children = (
+				89884BFE20DCED3500C4F038 /* CheckFingerprintSensorUseCase.swift */,
+				89884C0020DCED8900C4F038 /* CheckFingerprintSensorUseCaseViewProtocol.swift */,
+				89884C0220DCED9A00C4F038 /* CheckFingerprintSensorUseCaseRepositoryProtocol.swift */,
+			);
+			path = CheckFingerprintSensorUseCase;
+			sourceTree = "<group>";
+		};
+		89884C0420DCEE2A00C4F038 /* CheckFingerprintSensorUseCase */ = {
+			isa = PBXGroup;
+			children = (
+				89884C0520DCEE4700C4F038 /* CheckFingerprintSensorUseCaseRepository.swift */,
+			);
+			path = CheckFingerprintSensorUseCase;
+			sourceTree = "<group>";
+		};
+		89884C0720DCFF3C00C4F038 /* CheckUsernameStoredUseCase */ = {
+			isa = PBXGroup;
+			children = (
+				89884C0820DCFF5100C4F038 /* CheckUsernameStoredUseCase.swift */,
+				89884C0A20DCFF5F00C4F038 /* CheckUsernameStoredUseCaseViewProtocol.swift */,
+				89884C0C20DCFF7100C4F038 /* CheckUsernameStoredUseCaseRepositoryProtocol.swift */,
+			);
+			path = CheckUsernameStoredUseCase;
+			sourceTree = "<group>";
+		};
+		89884C0E20DCFFA600C4F038 /* CheckUsernameStoredUseCase */ = {
+			isa = PBXGroup;
+			children = (
+				89884C0F20DCFFB100C4F038 /* CheckUsernameStoredUseCaseRepository.swift */,
+			);
+			path = CheckUsernameStoredUseCase;
+			sourceTree = "<group>";
+		};
+		89884C1320DD022900C4F038 /* LoginWithFingerprintUseCase */ = {
+			isa = PBXGroup;
+			children = (
+				89884C1420DD024C00C4F038 /* LoginWithFingerprintUseCase.swift */,
+				89884C1620DD026600C4F038 /* LoginWithFingerprintUseCaseViewProtocol.swift */,
+				89884C1820DD027500C4F038 /* LoginWithFingerprintUseCaseRepositoryProtocol.swift */,
+			);
+			path = LoginWithFingerprintUseCase;
+			sourceTree = "<group>";
+		};
+		899464FD20DD02DC00170038 /* LoginWithFingerprintUseCase */ = {
+			isa = PBXGroup;
+			children = (
+				89884C1B20DD02A800C4F038 /* LoginWithFingerprintUseCaseRepository.swift */,
+			);
+			path = LoginWithFingerprintUseCase;
+			sourceTree = "<group>";
+		};
+		899464FE20DD0B6500170038 /* Authenticated */ = {
+			isa = PBXGroup;
+			children = (
+				899464FF20DD0B9000170038 /* AuthenticatedViewController.swift */,
+				8994650020DD0B9000170038 /* AuthenticatedViewController.xib */,
+			);
+			path = Authenticated;
+			sourceTree = "<group>";
+		};
+		8994650320DD0E1100170038 /* LoginUseCase */ = {
+			isa = PBXGroup;
+			children = (
+				8994650420DD0E2300170038 /* LoginUseCase.swift */,
+				8994650620DD0E2F00170038 /* LoginUseCaseViewProtocol.swift */,
+				8994650820DD0E5100170038 /* LoginUseCaseRepositoryProtocol.swift */,
+			);
+			path = LoginUseCase;
+			sourceTree = "<group>";
+		};
+		8994650A20DD0E9500170038 /* LoginUseCase */ = {
+			isa = PBXGroup;
+			children = (
+				8994650B20DD0EAB00170038 /* LoginUseCaseRepository.swift */,
+			);
+			path = LoginUseCase;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		89884BC820DCD85000C4F038 /* Fingerprint Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89884BDB20DCD85300C4F038 /* Build configuration list for PBXNativeTarget "Fingerprint Test" */;
+			buildPhases = (
+				89884BC520DCD85000C4F038 /* Sources */,
+				89884BC620DCD85000C4F038 /* Frameworks */,
+				89884BC720DCD85000C4F038 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Fingerprint Test";
+			productName = "Fingerprint Test";
+			productReference = 89884BC920DCD85000C4F038 /* Fingerprint Test.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		89884BC120DCD85000C4F038 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Julio Lopez";
+				TargetAttributes = {
+					89884BC820DCD85000C4F038 = {
+						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.DataProtection = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 89884BC420DCD85000C4F038 /* Build configuration list for PBXProject "Fingerprint Test" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 89884BC020DCD85000C4F038;
+			productRefGroup = 89884BCA20DCD85000C4F038 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				89884BC820DCD85000C4F038 /* Fingerprint Test */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		89884BC720DCD85000C4F038 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89884BD420DCD85300C4F038 /* Assets.xcassets in Resources */,
+				8994650220DD0B9000170038 /* AuthenticatedViewController.xib in Resources */,
+				89884BE620DCD9CA00C4F038 /* MainViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		89884BC520DCD85000C4F038 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8994650720DD0E2F00170038 /* LoginUseCaseViewProtocol.swift in Sources */,
+				89884C0B20DCFF5F00C4F038 /* CheckUsernameStoredUseCaseViewProtocol.swift in Sources */,
+				89884BF220DCE91C00C4F038 /* RegisterUseCaseRepositoryProtocol.swift in Sources */,
+				89884C1C20DD02A800C4F038 /* LoginWithFingerprintUseCaseRepository.swift in Sources */,
+				89884BCD20DCD85000C4F038 /* AppDelegate.swift in Sources */,
+				8994650120DD0B9000170038 /* AuthenticatedViewController.swift in Sources */,
+				89884C0120DCED8900C4F038 /* CheckFingerprintSensorUseCaseViewProtocol.swift in Sources */,
+				89884BFF20DCED3500C4F038 /* CheckFingerprintSensorUseCase.swift in Sources */,
+				89884C0D20DCFF7200C4F038 /* CheckUsernameStoredUseCaseRepositoryProtocol.swift in Sources */,
+				89884C0620DCEE4700C4F038 /* CheckFingerprintSensorUseCaseRepository.swift in Sources */,
+				89884C1520DD024C00C4F038 /* LoginWithFingerprintUseCase.swift in Sources */,
+				89884C0920DCFF5100C4F038 /* CheckUsernameStoredUseCase.swift in Sources */,
+				89884C1920DD027500C4F038 /* LoginWithFingerprintUseCaseRepositoryProtocol.swift in Sources */,
+				89884BE520DCD9CA00C4F038 /* MainViewController.swift in Sources */,
+				89884C1220DD00E700C4F038 /* Constants.swift in Sources */,
+				89884C0320DCED9A00C4F038 /* CheckFingerprintSensorUseCaseRepositoryProtocol.swift in Sources */,
+				89884BEE20DCE8FB00C4F038 /* RegisterUseCase.swift in Sources */,
+				89884BE820DCE85800C4F038 /* KeychainPasswordItem.swift in Sources */,
+				8994650520DD0E2300170038 /* LoginUseCase.swift in Sources */,
+				89884C1020DCFFB100C4F038 /* CheckUsernameStoredUseCaseRepository.swift in Sources */,
+				8994650C20DD0EAB00170038 /* LoginUseCaseRepository.swift in Sources */,
+				89884C1720DD026600C4F038 /* LoginWithFingerprintUseCaseViewProtocol.swift in Sources */,
+				8994650920DD0E5100170038 /* LoginUseCaseRepositoryProtocol.swift in Sources */,
+				89884BF620DCE9C100C4F038 /* RegisterUseCaseRepository.swift in Sources */,
+				89884BF020DCE91200C4F038 /* RegisterUseCaseViewProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		89884BD920DCD85300C4F038 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		89884BDA20DCD85300C4F038 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		89884BDC20DCD85300C4F038 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 379749CAMN;
+				INFOPLIST_FILE = "Fingerprint Test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "juliolt.Fingerprint-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		89884BDD20DCD85300C4F038 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 379749CAMN;
+				INFOPLIST_FILE = "Fingerprint Test/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "juliolt.Fingerprint-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		89884BC420DCD85000C4F038 /* Build configuration list for PBXProject "Fingerprint Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89884BD920DCD85300C4F038 /* Debug */,
+				89884BDA20DCD85300C4F038 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89884BDB20DCD85300C4F038 /* Build configuration list for PBXNativeTarget "Fingerprint Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89884BDC20DCD85300C4F038 /* Debug */,
+				89884BDD20DCD85300C4F038 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 89884BC120DCD85000C4F038 /* Project object */;
+}
