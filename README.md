@@ -18,8 +18,8 @@ Clone the repo and play on Xcode
 
 # Developer notes
 
-I have tried to update myself to last Android developing version and 
-use different famous Google and third party libraries, applying concepts 
+I have tried to update myself to last iOS developing version and
+use different famous Apple and third party libraries, applying concepts
 [Clean Architecture](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html). 
 
 Some technologies/tools used are:
